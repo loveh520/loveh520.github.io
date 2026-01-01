@@ -1,0 +1,17 @@
+photos:
+  - id: "1"
+    url: "/attached_assets/generated_images/Lifestyle_workspace_photo_b7ef2043.png"
+    alt: "工作空間"
+    date: "2025.11.05"
+    tags: ["工作", "日常"]
+  - id: "2"
+    url: "/attached_assets/generated_images/City_sunset_lifestyle_photo_43e9f373.png"
+    alt: "城市夕陽"
+    date: "2025.11.03"
+    tags: ["風景", "城市"]
+  - id: "3"
+    url: "/attached_assets/generated_images/Study_desk_lifestyle_photo_b0275e48.png"
+    alt: "學習時光"
+    date: "2025.11.01"
+    tags: ["學習", "書籍"]
+

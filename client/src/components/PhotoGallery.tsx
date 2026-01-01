@@ -2,44 +2,10 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { X } from "lucide-react";
-import workspacePhoto from "@assets/generated_images/Lifestyle_workspace_photo_b7ef2043.png";
-import sunsetPhoto from "@assets/generated_images/City_sunset_lifestyle_photo_43e9f373.png";
-import studyPhoto from "@assets/generated_images/Study_desk_lifestyle_photo_b0275e48.png";
-
-interface Photo {
-  id: string;
-  src: string;
-  alt: string;
-  date: string;
-  tags: string[];
-}
-
-const photos: Photo[] = [
-  {
-    id: "1",
-    src: workspacePhoto,
-    alt: "工作空間",
-    date: "2025.11.05",
-    tags: ["工作", "日常"]
-  },
-  {
-    id: "2",
-    src: sunsetPhoto,
-    alt: "城市夕陽",
-    date: "2025.11.03",
-    tags: ["風景", "城市"]
-  },
-  {
-    id: "3",
-    src: studyPhoto,
-    alt: "學習時光",
-    date: "2025.11.01",
-    tags: ["學習", "書籍"]
-  },
-];
+import { photos } from "@/data/content";
 
 export default function PhotoGallery() {
-  const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
+  const [selectedPhoto, setSelectedPhoto] = useState<typeof photos[0] | null>(null);
   const [activeTag, setActiveTag] = useState<string | null>(null);
 
   const allTags = Array.from(new Set(photos.flatMap(p => p.tags)));
@@ -92,7 +58,7 @@ export default function PhotoGallery() {
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
-                  src={photo.src}
+                  src={photo.url}
                   alt={photo.alt}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -128,7 +94,7 @@ export default function PhotoGallery() {
           </button>
           <div className="max-w-5xl w-full">
             <img
-              src={selectedPhoto.src}
+              src={selectedPhoto.url}
               alt={selectedPhoto.alt}
               className="w-full h-auto rounded-lg"
               onClick={(e) => e.stopPropagation()}
