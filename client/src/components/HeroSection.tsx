@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
-import heroBackground from "@assets/generated_images/Tech_hero_background_pattern_99359e83.png";
 
 export default function HeroSection() {
   const scrollToContent = () => {
@@ -15,7 +14,7 @@ export default function HeroSection() {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url(${heroBackground})`,
+          backgroundImage: `url(/attached_assets/generated_images/Tech_hero_background_pattern_99359e83.png)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

@@ -1,0 +1,23 @@
+id: "2"
+title: "任務管理應用"
+description: "極簡風格的待辦事項管理工具，幫助提升個人生產力"
+imageUrl: "/attached_assets/generated_images/Mobile_app_project_mockup_5881b449.png"
+techStack: ["React Native", "TypeScript", "Redux", "SQLite"]
+demoUrl: "#"
+githubUrl: "#"
+content: |
+  # 任務管理應用
+
+  這是一個專注於使用者體驗的任務管理應用。
+
+  ## 核心功能
+
+  - **拖拽排序**：直觀的拖拽操作，輕鬆調整任務順序
+  - **標籤分類**：使用標籤系統組織任務，提高管理效率
+  - **優先級設定**：為任務設定優先級，確保重要事項不被遺漏
+  - **跨平台支援**：使用 React Native 開發，實現 iOS 和 Android 雙平台支援
+
+  ## 開發心得
+
+  這個專案讓我深入理解了移動端開發的挑戰和最佳實踐。從 UI/UX 設計到效能優化，每個環節都需要仔細考量使用者的使用情境。
+

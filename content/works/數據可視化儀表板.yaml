@@ -1,0 +1,23 @@
+id: "1"
+title: "數據可視化儀表板"
+description: "一個現代化的數據分析平台，提供即時數據監控和視覺化功能"
+imageUrl: "/attached_assets/generated_images/Web_dashboard_project_screenshot_8ee3a8c5.png"
+techStack: ["React", "TypeScript", "Chart.js", "Tailwind CSS"]
+demoUrl: "#"
+githubUrl: "#"
+content: |
+  # 數據可視化儀表板
+
+  這個專案使用 React 和 TypeScript 開發，整合了多個數據源，提供即時的數據分析和視覺化。
+
+  ## 主要功能
+
+  - **即時數據監控**：整合多個數據源，提供即時的數據更新
+  - **多種圖表類型**：支援折線圖、柱狀圖、餅圖等多種視覺化方式
+  - **響應式設計**：適配各種螢幕尺寸，提供良好的使用者體驗
+  - **深色模式**：支援深色模式切換，保護使用者眼睛
+
+  ## 技術亮點
+
+  在開發過程中學習到了許多關於資料處理和前端效能優化的知識。特別是在處理大量數據時的效能優化，以及如何設計一個易於擴展的組件架構。
+
